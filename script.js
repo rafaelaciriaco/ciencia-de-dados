@@ -21,7 +21,25 @@ document.getElementById('questionario').addEventListener('submit', function(even
     .then(data => {
     console.log(data);
     gerarGrafico(data);
-    })
+    })```css
+body {
+font-family: Arial, sans-serif;
+margin: 20px;
+}
+
+form {
+margin-bottom: 20px;
+}
+
+label {
+display: block;
+margin-top: 10px;
+}
+
+#graficoContainer {
+margin-top: 30px;
+}
+```
     .catch(error => console.error('Erro:', error));
     });
     
